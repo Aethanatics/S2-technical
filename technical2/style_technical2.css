@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(#0f041eb3, #2c2132b3), url(images/persona3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #836FFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15F5BA;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    border: 2px solid transparent;
+    transition: border-color 2.5s ease, transform 1s ease;
+}
+
+.box.active {
+    border-color: #000000;
+    width: 400px;
+    height: 400px;
+    transform: translateY(-150%);
+}
